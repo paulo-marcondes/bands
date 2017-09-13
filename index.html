@@ -3611,8 +3611,10 @@
 
 
 var rand = bands[Math.floor(Math.random() * bands.length)];
+var hominis = "http://hominiscanidae.org/search/label/" + rand;
+document.getElementById("link").setAttribute("href",hominis);
 document.querySelector('#result').innerHTML = rand;
-document.querySelector('#result').innerHTML = rand;
+document.querySelector('#link').innerHTML = hominis;
 };
 
 </script>
@@ -3621,5 +3623,6 @@ document.querySelector('#result').innerHTML = rand;
 <body>
 <input id="clickMe" type="button" value="Go!" onclick="RandomBands();" />
 <h4 id="result"></h4>
+<a id="link"></a>
 </body>
 </html>
