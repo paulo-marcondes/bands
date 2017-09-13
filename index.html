@@ -3610,14 +3610,16 @@
 
 
 
-var rand = myArray[Math.floor(Math.random() * myArray.length)];
-
-}
+var rand = bands[Math.floor(Math.random() * bands.length)];
+document.querySelector('#result').innerHTML = rand;
+document.querySelector('#result').innerHTML = rand;
+};
 
 </script>
 
 </head>
 <body>
-<button onclick=RandomBands()></button>
+<input id="clickMe" type="button" value="Go!" onclick="RandomBands();" />
+<h4 id="result"></h4>
 </body>
 </html>
